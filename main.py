@@ -8,8 +8,8 @@ import Scheduler
 
 if __name__ == '__main__':
     arch_1 = Process.ProcessControlBLock([1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, -1])
-    arch_2 = Process.ProcessControlBLock([1, 1, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1, -1])
-    arch_3 = Process.ProcessControlBLock([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, -1])
+    arch_2 = Process.ProcessControlBLock([1, 1, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, -1])
+    arch_3 = Process.ProcessControlBLock([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, -1])
 
     nonpreemptive_fifo_processes = [arch_1.fork(), arch_2.fork(), arch_3.fork()]
     preemptive_fifo_processes = [arch_1.fork(), arch_2.fork(), arch_3.fork()]
